@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="main-container" class="container">
+      <h1 id="city" class="text-center">Mini WEATHER</h1>
+      <h2 id="state" class="text-center">Allow Location Access to find out</h2>
+    <div id="current-weather" class="container">
+      <div class="row">
+        <div class="col-xs-5 valign" align="center">
+          <br>
+          <canvas id="weather-icon" width="95" height="80"></canvas>
+        </div><!--
+        --><div class="col-xs-5 valign" align="right">
+          <h1 id="temp">°</h1>
+        </div><!--
+        --><div class="col-xs-2 valign" align="center">
+        <br>
+          <a id="fbutton" class="button" title="Change degrees to fahrenheit" target="_blank"><p>F</p></a>
+          <a id="cbutton" class="button" title="Change degrees to celsius" target="_blank"><p>C</p></a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-xs-5">
+          <h1 id="weather-description">Summary</h1>
+        </div>
+        <div class="col-xs-7">
+          <h1 id="feels-like">Feels Like</h1>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="style1">
+    <div id="forecast" class="container">
+      <div class="row">
+        <h2 id="state" class="text-center">Forecast for three days</h2>
+        <div class="col-xs-4 text-center">
+          <p id="day2">Day 2</p>
+          <canvas id="weather-icon-day2" width="55" height="45"></canvas>
+          <p id="day2-high-low">Day 2 high/low</p>
+          <i id="day2-raindrop" class="wi wi-raindrop"></i>
+          <p id="day2-precip">Day 2 precip</p>
+        </div>
+        <div class="col-xs-4 text-center">
+          <p id="day3">Day 3</p>
+          <canvas id="weather-icon-day3" width="55" height="45"></canvas>
+          <p id="day3-high-low">Day 3 high/low</p>
+          <i id="day3-raindrop" class="wi wi-raindrop"></i>
+          <p id="day3-precip">Day 3 precip</p>
+        </div>
+        <div class="col-xs-4 text-center">
+          <p id="day4">Day 4</p>
+          <canvas id="weather-icon-day4" width="55" height="45"></canvas>
+          <p id="day4-high-low">Day 4 high/low</p>
+          <i id="day4-raindrop" class="wi wi-raindrop"></i>
+          <p id="day4-precip">Day 4 precip</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+
+<footer>
+  <div id="attribution-panel" class="container">
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div id="panel-heading" class="panel-heading">
+          <h4 class="panel-title" style="font-size: 12px">
+            <a data-toggle="collapse" href="#collapse1">Credits for Data and content</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <ul class="list-group" style="font-size: 10px">
+            <li class="list-group-item">Weather data and animated icons from <a href="http://forecast.io/">forecast.io</a> via the Dark Sky API</li>
+            <li class="list-group-item">Location data from <a href="https://developers.google.com/maps/documentation/geocoding/start">Google Maps Geocoding API</a></li>
+            <li class="list-group-item">Raindrop icons from <a href="https://erikflowers.github.io/weather-icons/">Eric Flowers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>Created with <i class="fa fa-heart"></i>  by <a href="https://www.instagram.com/chilled_coder/">Ahamed Careem</a> for the <a href="https://cs50.harvard.edu/x/2021/" target="_blank">CS50 final project</a></p>
+</footer>

@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    font-family: Poppins;
+    color: #ffffff;
+    background: #2F4F4F;
+    padding-bottom: 11rem;
+  }
+  #main-container {
+    background-color: #000066;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 10px solid #15a303;
+  }
+  #city {
+    font-size: 55px;
+  }
+  #state {
+    font-size: 12px;
+  }
+  #current-weather {
+    max-width: 300px;
+  }
+  .valign {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+  #temp {
+    font-size: 65px;
+  }
+  #fbutton {
+    font-size: 25px;
+  }
+  #cbutton {
+    font-size: 25px;
+  }
+  .button:hover {
+    text-decoration: blueviolet;
+    cursor: pointer;
+    color: black;
+  }
+  a {
+    color: #A9DD9B;
+  }
+  #weather-description {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #feels-like {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  hr.style1 {
+    border-top: 3px solid #dbd702;
+    border-radius: 10px;
+      text-align: center;
+    max-width: 350px;
+  }
+  #forecast {
+    max-width: 350px;
+  }
+  #day2-raindrop {
+    display: inline-block;
+  }
+  #day2-precip {
+    display: inline-block;
+  }
+  #day3-raindrop {
+    display: inline-block;
+  }
+  #day3-precip {
+    display: inline-block;
+  }
+  #day4-raindrop {
+    display: inline-block;
+  }
+  #day4-precip {
+    display: inline-block;
+  }
+
+
+
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0rem;
+    text-align: center;
+    font-size: 12px;
+  }
+  footer a {
+    color: #ffffff;
+  }
+  #collapse1 a {
+    color: #A9DD9B;
+  }
+  #attribution-panel {
+    max-width: 350px;
+  }
+  #panel-heading {
+    background-color: #f5f6f7;
+    border: 1.5px solid #b4bbbd;
+    border-radius: 0px;
+  }
